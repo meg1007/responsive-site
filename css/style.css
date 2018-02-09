@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #726250;
+  font-size: 1.4rem;
+  letter-spacing: .1em;
+  line-height: 1.6; }
+
+a {
+  color: #726250; }
+
+header {
+  height: 500px;
+  background-image: url(../images/vancouver-1656242_1280.jpg);
+  background-size: cover;
+  background-position: center; }
+
+@media (max-width: 768px) {
+  header {
+    height: 250px; } }
+main .top {
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px; }
+  main .top #top-title {
+    font-size: 3.0rem;
+    font-weight: bold; }
+main .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  margin-bottom: 20px; }
+  main .container .box {
+    width: 30%;
+    background-color: #fffaf0;
+    text-align: center; }
+  main .container .box-tittle {
+    margin: 5px; }
+
+@media (max-width: 768px) {
+  main .container {
+    flex-direction: column; }
+    main .container .box {
+      width: 100%;
+      margin-bottom: 20px; } }
+footer {
+  text-align: center;
+  margin: 20px; }
+  footer h1 {
+    font-size: 2.0 rem;
+    font-weight: bold;
+    margin-top: 50 px;
+    margin-bottom: 50 px; }
+  footer #button {
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #d2b48c;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+/*# sourceMappingURL=style.css.map */

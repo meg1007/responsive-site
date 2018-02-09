@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+// font-family
+$baseFontFamily :'Montserrat', sans-serif, "游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fffaf0;
+$subColor: #7fffd4;
+$keyColor: #d2b48c;
+$fontColor: #726250;
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  color:$fontColor;
+  font-size: 1.4rem;
+  letter-spacing: .1em;
+  line-height: 1.6;
+}
+a{
+  color:$fontColor;
+}
+
+//header
+header{
+  height:500px;
+  background-image: url(../images/vancouver-1656242_1280.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media(max-width: 768px){
+  header{
+    height: 250px;
+  }
+}
+
+//main
+main{
+  .top{
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    #top-title{
+      font-size: 3.0rem;
+      font-weight: bold
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    margin-bottom: 20px;
+    
+    .box{
+      width: 30%;
+      background-color: $baseColor;
+      text-align: center;
+    }
+    .box-tittle{
+      margin: 5px;
+    }
+  }  
+}
+
+@media(max-width: 768px) {
+  main{
+    .container{
+      flex-direction: column;
+      .box{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+}
+  
+//footer
+footer{
+  text-align: center;
+  margin: 20px;
+  h1{
+    font-size: 2.0 rem;
+    font-weight: bold;
+    margin-top: 50 px;
+    margin-bottom: 50 px;
+  }
+  #button{
+    border-radius: 8px;
+    padding: 4px;
+    background-color: $keyColor;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
